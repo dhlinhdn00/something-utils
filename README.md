@@ -60,8 +60,12 @@ Branches are used to develop features isolated from each other:
 1. **Create a Branch**: 
 
         git branch new-branch
+   
+   Additionally, to change the name of branch:
 
-2. **Switch to the Branch**: 
+        git branch -m old-branch new-branch
+
+3. **Switch to the Branch**: 
 
         git checkout new-branch
 
@@ -71,7 +75,7 @@ Branches are used to develop features isolated from each other:
         
     with -b is an option combined with `checkout` that tells Git to create a new branch.
 
-3. **Merge the Branch**: First, switch back to the main branch, then merge.
+4. **Merge the Branch**: First, switch back to the main branch, then merge.
 
         git checkout main
         git merge new-branch
