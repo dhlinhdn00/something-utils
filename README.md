@@ -20,5 +20,5 @@ For Linux or using Git Bash on Windows:
 3. **Finally, execute it:**
 
    ```bash
-   ./gen_mon_really powerful with just a few good changes in this section_dir_map.sh
+   ./gen_dir_map.sh
    ```
