@@ -64,8 +64,11 @@ Branches are used to develop features isolated from each other:
 2. **Switch to the Branch**: 
 
         git checkout new-branch
+
     Or, to create and switch to one step (including step 1):
+
         git checkout -b new-branch
+        
     with -b is an option combined with `checkout` that tells Git to create a new branch.
 
 3. **Merge the Branch**: First, switch back to the main branch, then merge.
