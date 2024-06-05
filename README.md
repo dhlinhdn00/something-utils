@@ -133,11 +133,6 @@ It is working in all types of virtual environment:
   pip install -r requirements.txt
   ```
 
-## Example in my Nitro laptop to start with anaconda:
-
-conda activate r
-
-
 ## Conclusion
 
 Virtual environments are essential for managing project-specific dependencies and keeping your Python projects organized. They prevent package conflicts and help maintain a clean workspace. For more detailed information about virtual environments and managing packages, visit the Python Packaging Authority's guide at [packaging.python.org](https://packaging.python.org/).
