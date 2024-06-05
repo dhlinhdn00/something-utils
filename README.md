@@ -50,10 +50,31 @@ Replace `3.8` with the Python version of your choice. This command creates a new
   ```
 
 ### Using Anaconda
+Choose the right path of Anaconda. For example in my laptop:
+- **Linux**:
+  ```bash
+  source ~/anaconda3/bin/activate
+  ```
 
-- **All platforms**:
+- **Windows**:
+Use Git Bash:
+  ```bash
+  source /c/ProgramData/anaconda3/Scripts/activate
+  ```
+
+- **Next steps (in all platforms)**
   ```bash
   conda activate myenv
+  ```
+
+Or you can open directly via Anaconda Prompt in Windows:
+  ```bash
+  activate myenv
+  ```
+
+If you have not added Anaconda to your system PATH, or if you prefer using the standard Windows Command Prompt or PowerShell, you might need to navigate to the directory where Anaconda is installed and run the activate command from there. Typically, the command would look something like this:
+  ```bash
+  C:\ProgramData\anaconda3\Scripts\activate.bat myenv
   ```
 
 ## Installing Packages
@@ -97,6 +118,25 @@ When you're done working in the virtual environment, you can deactivate it:
   ```bash
   conda deactivate
   ```
+
+## Import and Export Requirements for project:
+
+It is working in all types of virtual environment:
+
+- **Export**:
+  ```bash
+  pip freeze > requirements.txt
+  ```
+
+- **Import**:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+## Example in my Nitro laptop to start with anaconda:
+
+conda activate r
+
 
 ## Conclusion
 
