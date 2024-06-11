@@ -65,7 +65,7 @@ Branches are used to develop features isolated from each other:
 
         git branch -m old-branch new-branch
 
-3. **Switch to the Branch**: 
+2. **Switch to the Branch**: 
 
         git checkout new-branch
 
@@ -75,7 +75,7 @@ Branches are used to develop features isolated from each other:
         
     with -b is an option combined with `checkout` that tells Git to create a new branch.
 
-4. **Merge the Branch**: First, switch back to the main branch, then merge.
+3. **Merge the Branch**: First, switch back to the main branch, then merge.
 
         git checkout main
         git merge new-branch
@@ -85,6 +85,64 @@ Branches are used to develop features isolated from each other:
 To update your local repository with the latest changes from remote:
 
     git pull origin main
+
+## Work with Git LFS
+
+1. **Installing Git LFS**: 
+
+    Open your terminal and run the following commands to install Git LFS:
+
+        curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+        sudo apt-get install git-lfs
+
+    Then, initialize Git LFS:
+
+        git lfs install
+
+2. **Using Git LFS**: 
+
+    Track large files with Git LFS:
+
+        git lfs track "file_name"
+
+    Sometimes, you can track all the files with specified extensions. For example:
+        
+        git lfs track "*.zip"
+        git lfs track "*.pth"
+    
+    Add and commit the `.gitattributes` file to save the changes:
+
+        git add .gitattributes
+        git commit -m "Track large files with Git LFS"
+
+    After configuring files to be tracked by Git LFS, simply add, commit and push them as usual.
+
+3. **Checking and Managing**: 
+
+    To see the files being tracked by Git LFS:
+
+        git lfs ls-files
+
+    To view Git LFS usage infomation: Go to your repository in GitHub, click on `Settings` and fine the `Git Large File Storage` or `Billing` section to view the usage of bandwidth and storage.
+
+4. **Removing Git LFS**: 
+
+    To untrack files:
+
+        git lfs untrack "file_name"
+    
+    To commit the changes:
+
+        git add .gitattributes
+        git commit -m "Untrack files with Git LFS"
+
+    To remove Git LFS hooks from your reposity:
+        
+        git lfs uninstall
+    
+    If you wwant to remove Git LFS from your system:
+
+        sudo apt-get remove git-lfs
 
 ## Conclusion
 
