@@ -140,7 +140,7 @@ To update your local repository with the latest changes from remote:
         
         git lfs uninstall
     
-    If you wwant to remove Git LFS from your system:
+    If you want to remove Git LFS from your system:
 
         sudo apt-get remove git-lfs
 
