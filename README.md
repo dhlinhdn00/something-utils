@@ -1,4 +1,4 @@
-# SOMETHING_UTILS
+# something-utils
 Utils for me...
 
 There are 4 branches with 4 corresponding contents!
