@@ -28,7 +28,7 @@ Choosing the right naming convention is important for readability, consistency, 
 - **Example:** `MY_AWESOME_PROJECT`
 - **When to use:** This style is less common for repositories but might be used for large open-source projects or to emphasize important repositories.
 
-## 6. no-case (No separator or special characters)
+## 6. nocase (No separator or special characters)
 - **How to write:** All lowercase letters, no separators.
 - **Example:** `myawesomeproject`
 - **When to use:** This style is difficult to read but might be used if you want the shortest possible name. However, it's generally not recommended.
